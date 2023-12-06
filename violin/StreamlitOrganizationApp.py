@@ -6,7 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statistics as stat
 from operator import itemgetter
-from varname import nameof
 from GraphMaker import *
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
