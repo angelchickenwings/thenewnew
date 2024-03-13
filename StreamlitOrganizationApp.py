@@ -26,7 +26,7 @@ class Group():
 
 
 # IMPORT THE DATAb
-dfreal = pd.read_csv(r"cocktail2.csv", index_col="instnm", low_memory=False)
+dfreal = pd.read_csv(r"cocktail.csv", index_col="instnm", low_memory=False)
 #need to exclude ccbasic data out before running the code and should be ran and written once in order to save time. 
 #FROM 0 to 14 off CCBASIC WILL BE CUT OUT
 df=dfreal.loc[dfreal['ccbasic'] > 14]
