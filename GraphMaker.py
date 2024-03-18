@@ -237,6 +237,11 @@ def ChooseGraph(state,df,gtype,labels): #iterate through groups in later iterati
             ti['Cost 3'] = da.loc['cost3']
             ti['Cost 4'] = da.loc['cost4']
             ti['Cost 5'] = da.loc['cost5']
+            ti['Price 1']=da.loc['npt41']
+            ti['Price 2'] = da.loc['npt42']
+            ti['Price 3'] = da.loc['npt43']
+            ti['Price 4'] = da.loc['npt44']
+            ti['Price 5'] = da.loc['npt45']
             ti['Median Parent Plus Loan Debt'] = da.loc['plus_debt_inst_comp_md']
         if gtype[0][1] == 'support':
             ti['Support']=da.loc['support']
