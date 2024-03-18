@@ -237,11 +237,16 @@ def ChooseGraph(state,df,gtype,labels): #iterate through groups in later iterati
             ti['Cost 3'] = da.loc['cost3']
             ti['Cost 4'] = da.loc['cost4']
             ti['Cost 5'] = da.loc['cost5']
-            ti['Price 1']=(da.loc['npt41_pub'])+(da.loc['npt41_priv'])
-            ti['Price 2'] = (da.loc['npt42_pub'])+(da.loc['npt42_priv'])
-            ti['Price 3'] = (da.loc['npt43_pub'])+(da.loc['npt43_priv'])
-            ti['Price 4'] = (da.loc['npt44_pub'])+(da.loc['npt44_priv'])
-            ti['Price 5'] = (da.loc['npt45_pub'])+(da.loc['npt45_priv'])
+            ti['Price 1 Pub']=(da.loc['npt41_pub'])
+            ti['Price 1 Priv']=(da.loc['npt41_priv'])
+            ti['Price 2 Pub'] = (da.loc['npt42_pub'])
+            ti['Price 2 Priv'] = (da.loc['npt42_priv'])
+            ti['Price 3 Pub'] = (da.loc['npt43_pub'])
+            ti['Price 3 Priv'] = (da.loc['npt43_priv'])
+            ti['Price 4 Pub'] = (da.loc['npt44_pub'])
+            ti['Price 4 Priv'] = (da.loc['npt44_priv'])
+            ti['Price 5 Pub'] = (da.loc['npt45_pub'])
+            ti['Price 5 Priv'] =(da.loc['npt45_priv'])
             ti['Median Parent Plus Loan Debt'] = da.loc['plus_debt_inst_comp_md']
         if gtype[0][1] == 'support':
             ti['Support']=da.loc['support']
