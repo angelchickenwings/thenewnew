@@ -261,8 +261,8 @@ def ChooseGraph(state,df,gtype,labels): #iterate through groups in later iterati
             ti['75th Percentile of Earning 10 Years Out'] = da.loc['pct75_earn_wne_p10']
             ti['90th Percentile of Earning 10 Years Out'] = da.loc['pct90_earn_wne_p10']
             #ti['Median Earning 10 Years Out'] = da.loc['md_earn_wne_p10']
-            ti['Weighted Debt Score'] = da.loc['weighted_debt']
-            ti['Weighted Income Score'] = da.loc['weighted_income']
+            #ti['Weighted Debt Score'] = da.loc['weighted_debt']
+            #ti['Weighted Income Score'] = da.loc['weighted_income']
         if gtype[0][1] == 'inclusion':
             ti['Economic & Inclusion Score']=da.loc['inclusion']
             ti['Social Diversity Score']=da.loc['social_diversity_score']
